@@ -1,0 +1,26 @@
+[user]
+	name = Zhu Liang
+	email = zhuliangg11@gmail.com
+	signingkey = 382EE914
+[core]
+	editor = nano
+	autocrlf = input
+	excludesfile = /Users/paradite/.gitignore_global
+[push]
+	default = simple
+[alias]
+	st = status
+	br = branch
+	co = checkout
+	ch = checkout
+	ci = commit
+	cim = commit -am
+	cims = commit -S -am
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/paradite/.stCommitMsg

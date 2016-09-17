@@ -1,0 +1,2 @@
+assets/scripts/vendor/*
+**/*{.,-}min.js
