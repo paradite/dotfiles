@@ -1,7 +1,7 @@
 [user]
 	name = Zhu Liang
 	email = zhuliangg11@gmail.com
-	signingkey = 382EE914
+	signingkey = E0ACFC52
 [core]
 	editor = nano
 	autocrlf = input
@@ -16,6 +16,7 @@
 	ci = commit
 	cim = commit -am
 	cims = commit -S -am
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -24,3 +25,4 @@
 	trustExitCode = true
 [commit]
 	template = /Users/paradite/.stCommitMsg
+	gpgsign = true
