@@ -28,3 +28,31 @@ HISTFILESIZE=2000
 test -f ~/.bashrc && source ~/.bashrc
 # added by Anaconda3 4.1.1 installer
 export PATH="/Users/paradite/anaconda/bin:$PATH"
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# rbenv
+# https://github.com/rbenv/rbenv/issues/815
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# g<alias>
+# https://gist.github.com/mwhite/6887990
+# for .bashrc
+if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+    . /etc/bash_completion
+fi
+
+
+function_exists() {
+    declare -f -F $1 > /dev/null
+    return $?
+}
+
+for al in `__git_aliases`; do
+    alias g$al="git $al"
+
+    complete_func=_git_$(__git_aliased_command $al)
+    function_exists $complete_fnc && __git_complete g$al $complete_func
+done
