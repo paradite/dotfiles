@@ -6,8 +6,8 @@ export PATH=/usr/local/bin:$PATH
 
 export PATH=/Users/paradite/bin/:$PATH
 
-source ~/bin/git-completion.bash
-source ~/bin/git-prompt.sh
+source ~/.git-completion.bash
+source ~/.git-prompt.sh
  
 export PS1='[\w$(__git_ps1 " (%s)")]\n\$ '
 export PATH=$PATH:/Applications/Android\ Studio.app/sdk/platform-tools/
