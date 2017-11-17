@@ -26,12 +26,6 @@ HISTFILESIZE=2000
 
 # Load .bashrc if it exists
 test -f ~/.bashrc && source ~/.bashrc
-# added by Anaconda3 4.1.1 installer
-export PATH="/Users/paradite/anaconda/bin:$PATH"
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # rbenv
 # https://github.com/rbenv/rbenv/issues/815
