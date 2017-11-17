@@ -1,0 +1,38 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"Babel",
+		"Codecs33",
+		"ConvertToUTF8",
+		"DocBlockr",
+		"EditorConfig",
+		"Git",
+		"HTML-CSS-JS Prettify",
+		"JavaScript Completions",
+		"JavaScript Snippets",
+		"LaTeXTools",
+		"LESS",
+		"Less2Css",
+		"Markdown Preview",
+		"MarkdownHighlighting",
+		"Package Control",
+		"Pretty JSON",
+		"Sass",
+		"SASS Build",
+		"SFTP",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-jshint",
+		"SublimeOnSaveBuild",
+		"TypeScript"
+	],
+	"repositories":
+	[
+		"https://github.com/bnlucas/SassBuilder"
+	]
+}
