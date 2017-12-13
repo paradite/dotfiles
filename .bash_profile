@@ -4,13 +4,10 @@ export LANG=en_US.UTF-8
 
 export PATH=/usr/local/bin:$PATH
 
-export PATH=/Users/paradite/bin/:$PATH
-
 source ~/.git-completion.bash
 source ~/.git-prompt.sh
  
 export PS1='[\w$(__git_ps1 " (%s)")]\n\$ '
-export PATH=$PATH:/Applications/Android\ Studio.app/sdk/platform-tools/
 
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
@@ -27,17 +24,12 @@ HISTFILESIZE=2000
 # Load .bashrc if it exists
 test -f ~/.bashrc && source ~/.bashrc
 
-# rbenv
-# https://github.com/rbenv/rbenv/issues/815
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
 # g<alias>
 # https://gist.github.com/mwhite/6887990
 # for .bashrc
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
-
 
 function_exists() {
     declare -f -F $1 > /dev/null
