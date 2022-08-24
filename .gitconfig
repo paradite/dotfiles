@@ -9,6 +9,7 @@
 [push]
 	default = current
 [alias]
+	p = push
 	a = add
 	d = diff
 	s = status
