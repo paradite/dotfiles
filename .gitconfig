@@ -26,5 +26,4 @@
 	cz = cz
 	undo = reset HEAD~1 --soft
 [commit]
-	template = /Users/paradite/.stCommitMsg
 	gpgsign = true
