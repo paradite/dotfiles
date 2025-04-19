@@ -12,11 +12,6 @@ source ~/.git-prompt.sh
 NEWLINE=$'\n'
 setopt PROMPT_SUBST ; PS1='[%~$(__git_ps1 " (%s)")]${NEWLINE}\$ '
 
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # git aliases
 for al in `git --list-cmds=alias`; do
     alias g$al="git $al"
