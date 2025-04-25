@@ -26,6 +26,7 @@ alias http='python3 -m http.server'
 alias gfp="git fetch --prune"
 alias gcz="git cz"
 alias gdc="git diff --cached"
+alias gdw="git diff --word-diff"
 
 alias git-ignore='git update-index --skip-worktree'
 alias git-unignore='git update-index --no-skip-worktree'
